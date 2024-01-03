@@ -11,6 +11,8 @@ Create a project manually
 
 This includes Owner (basic) permission and Organization policy administrator role (applicable for GCP CE Argolis environment).
 
+<hr>
+
 ## 3. Enable requisite Google APIs
 
 Paste in Cloud Shell scoped to the project you created-
@@ -29,6 +31,8 @@ gcloud services enable logging.googleapis.com
 gcloud services enable monitoring.googleapis.com
 ```
 
+<hr>
+
 ## 4. Update requite Organizational Policies
 
 Paste in Cloud Shell scoped to the project you created-
@@ -38,7 +42,7 @@ Paste in Cloud Shell scoped to the project you created-
 PROJECT_ID=`gcloud config list --format "value(core.project)" 2>/dev/null`
 
 #4.a. Relax require OS Login
-rm os_login.yaml
+rm -rf os_login.yaml
 
 cat > os_login.yaml << ENDOFFILE
 name: projects/${PROJECT_ID}/policies/compute.requireOsLogin
@@ -70,7 +74,7 @@ rm disableSerialPortLogging.yaml
 #4.c. Disable Shielded VM requirement
 
 
-shieldedVm.yaml 
+rm -rf shieldedVm.yaml 
 
 cat > shieldedVm.yaml << ENDOFFILE
 name: projects/$PROJECT_ID/policies/compute.requireShieldedVm
@@ -85,7 +89,7 @@ rm shieldedVm.yaml
 
 #4.d. Disable VM can IP forward requirement
 
-rm vmCanIpForward.yaml
+rm -rf  vmCanIpForward.yaml
 
 cat > vmCanIpForward.yaml << ENDOFFILE
 name: projects/$PROJECT_ID/policies/compute.vmCanIpForward
@@ -100,7 +104,7 @@ rm vmCanIpForward.yaml
 
 #4.e. Enable VM external access
 
-rm vmExternalIpAccess.yaml
+rm -rf  vmExternalIpAccess.yaml
 
 cat > vmExternalIpAccess.yaml << ENDOFFILE
 name: projects/$PROJECT_ID/policies/compute.vmExternalIpAccess
@@ -117,7 +121,7 @@ rm vmExternalIpAccess.yaml
 #4.f. Enable restrict VPC peering
 
 ```
-rm restrictVpcPeering.yaml
+rm -rf  restrictVpcPeering.yaml
 
 cat > restrictVpcPeering.yaml << ENDOFFILE
 name: projects/$PROJECT_ID/policies/compute.restrictVpcPeering
@@ -131,6 +135,7 @@ gcloud org-policies set-policy restrictVpcPeering.yaml
 rm restrictVpcPeering.yaml
 ```
 
+<hr>
 
 ## 5. Provision a User Managed Service Account (UMSA)
 
