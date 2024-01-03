@@ -32,7 +32,7 @@ gcloud services enable monitoring.googleapis.com
 ## 4. Update requite Organizational Policies
 
 Paste in Cloud Shell scoped to the project you created-
-```
+
 
 ```
 #4.a. Relax require OS Login
