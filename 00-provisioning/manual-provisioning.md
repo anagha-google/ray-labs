@@ -35,6 +35,8 @@ Paste in Cloud Shell scoped to the project you created-
 
 
 ```
+PROJECT_ID=`gcloud config list --format "value(core.project)" 2>/dev/null`
+
 #4.a. Relax require OS Login
 rm os_login.yaml
 
