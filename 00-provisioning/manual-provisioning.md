@@ -232,6 +232,8 @@ gcloud iam service-accounts add-iam-policy-binding \
 
 ## 7. Provision the Networking Dependencies
 
+Ray (on Vertex AI) clusters are created in the Google tenant project and not your GCP project. And they are private by default. So to connect with them, from your compute (Vertex AI workbench instance), you need to peer your compute network with Google Service Networking. This section addresses creation of all requisite networking functions.
+
 ### 7.1. Create a VPC
 
 Paste in Cloud Shell scoped to the project you created-
