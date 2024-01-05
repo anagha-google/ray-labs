@@ -305,7 +305,6 @@ gcloud services vpc-peerings connect \
   --ranges=$PEERING_RANGE_NAME \
   --project=$PROJECT_ID \
   --impersonate-service-account $UMSA_FQN
-
 ```
 
 ## 8. Provision Cloud Storage Buckets
@@ -363,23 +362,15 @@ gcloud workbench instances create $INSTANCE_NM --vm-image-project=cloud-notebook
 ```
 
 
-## 11. Provision "Ray on Vertex AI"/RoV Cluster
+## 11. Provision "Ray on Vertex AI" (RoV) Cluster
 
 Paste in Cloud Shell scoped to the project you created-
 ```
-PROJECT_ID=`gcloud config list --format "value(core.project)" 2>/dev/null`
-PROJECT_NBR=`gcloud projects describe $PROJECT_ID | grep projectNumber | cut -d':' -f2 |  tr -d "'" | xargs`
-UMSA=lab-sa
-UMSA_FQN=$UMSA@$PROJECT_ID.iam.gserviceaccount.com
-LOCATION="us-central1"
-ZONE="$LOCATION-b"
-INSTANCE_NM="ray-lab-vaiwmi"
-SUBNET_NM="ray-lab-snet"
-SUBNET_RESOURCE_URI=projects/$PROJECT_ID/regions/$LOCATION/subnetworks/$SUBNET_NM
-
-
-gcloud workbench instances create $INSTANCE_NM --vm-image-project=cloud-notebooks-managed --vm-image-family=workbench-instances --machine-type=n1-standard-4 --location=$ZONE --subnet=$SUBNET_RESOURCE_URI  --service-account-email=$UMSA_FQN
+pip install google-cloud-aiplatform[ray]
 ```
+
+
+
 
 
 
