@@ -34,6 +34,7 @@ gcloud services enable dataproc.googleapis.com
 gcloud services enable dataplex.googleapis.com
 gcloud services enable datacatalog.googleapis.com
 gcloud services enable datalineage.googleapis.com
+gcloud services enable dataform.googleapis.com
 ```
 
 <hr>
