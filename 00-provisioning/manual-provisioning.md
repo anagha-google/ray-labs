@@ -44,6 +44,10 @@ This is for any compute you may spin up for ETL or notebooks...such as Dataproc 
 
 Paste in Cloud Shell scoped to the project you created-
 ```
+PROJECT_ID=`gcloud config list --format "value(core.project)" 2>/dev/null`
+PROJECT_NBR=`gcloud projects describe $PROJECT_ID | grep projectNumber | cut -d':' -f2 |  tr -d "'" | xargs`
+PROJECT_NAME=`gcloud projects describe ${PROJECT_ID} | grep name | cut -d':' -f2 | xargs`
+
 #4.a. Relax require OS Login
 
 rm -rf os_login.yaml
@@ -254,19 +258,19 @@ Ray (on Vertex AI) clusters are created in the Google tenant project and not you
 Paste in Cloud Shell scoped to the project you created-
 ```
 PROJECT_ID=`gcloud config list --format "value(core.project)" 2>/dev/null`
-VPC_NM="ray-lab-vpc"
+VPC_NM="ray-lab-vpc-auto-snet"
 UMSA=lab-sa
 UMSA_FQN=$UMSA@$PROJECT_ID.iam.gserviceaccount.com
 
 gcloud compute networks create $VPC_NM \
 --project=$PROJECT_ID \
---subnet-mode=custom \
+--subnet-mode=auto \
 --mtu=1460 \
 --bgp-routing-mode=regional \
 --impersonate-service-account $UMSA_FQN
 ```
 
-### 7.2. Create a subnet
+### 7.2. SKIP THIS - Create a subnet
 
 Paste in Cloud Shell scoped to the project you created-
 ```
@@ -293,7 +297,7 @@ gcloud compute networks subnets create $SUBNET_NM \
 Paste in Cloud Shell scoped to the project you created-
 ```
 PROJECT_ID=`gcloud config list --format "value(core.project)" 2>/dev/null`
-VPC_NM="ray-lab-vpc"
+VPC_NM="ray-lab-vpc-auto-snet"
 UMSA=lab-sa
 UMSA_FQN=$UMSA@$PROJECT_ID.iam.gserviceaccount.com
 PEERING_NM="ray-lab-peering-to-service-networking"
@@ -321,7 +325,6 @@ gcloud services vpc-peerings connect \
   --project=$PROJECT_ID \
   --impersonate-service-account $UMSA_FQN
 ```
-
 <hr>
 
 ## 8. Provision Cloud Storage Buckets
