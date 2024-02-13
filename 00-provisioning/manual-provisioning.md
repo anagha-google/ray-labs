@@ -31,6 +31,9 @@ gcloud services enable logging.googleapis.com
 gcloud services enable monitoring.googleapis.com
 gcloud services enable cloudresourcemanager.googleapis.com
 gcloud services enable dataproc.googleapis.com
+gcloud services enable dataplex.googleapis.com
+gcloud services enable datacatalog.googleapis.com
+gcloud services enable datalineage.googleapis.com
 ```
 
 <hr>
@@ -163,6 +166,7 @@ gcloud iam service-accounts create ${UMSA} \
 
 ```
 
+<hr>
 
 ## 6. Grant requisite permissions to the UMSA and yourself
 
@@ -205,6 +209,15 @@ gcloud projects add-iam-policy-binding $PROJECT_ID --member=serviceAccount:$UMSA
 gcloud projects add-iam-policy-binding $PROJECT_ID --member=serviceAccount:$UMSA_FQN \
 --role="roles/compute.networkAdmin"
 
+gcloud projects add-iam-policy-binding $PROJECT_ID --member=serviceAccount:$UMSA_FQN \
+--role="roles/dataplex.admin"
+
+gcloud projects add-iam-policy-binding $PROJECT_ID --member=serviceAccount:$UMSA_FQN \
+--role="roles/datalineage.admin"
+
+gcloud projects add-iam-policy-binding $PROJECT_ID --member=serviceAccount:$UMSA_FQN \
+--role="roles/datacatalog.admin"
+
 ```
 
 ### 6.2. Grant yourself permissions to impersonate the UMSA
@@ -229,6 +242,7 @@ gcloud iam service-accounts add-iam-policy-binding \
     --role="roles/iam.serviceAccountTokenCreator"
 ```
 
+<hr>
 
 ## 7. Provision the Networking Dependencies
 
@@ -307,6 +321,8 @@ gcloud services vpc-peerings connect \
   --impersonate-service-account $UMSA_FQN
 ```
 
+<hr>
+
 ## 8. Provision Cloud Storage Buckets
 
 Paste in Cloud Shell scoped to the project you created-
@@ -323,6 +339,8 @@ LAB_CODE_BUCKET=ray_lab_code_bucket_$PROJECT_NBR
 gcloud storage buckets create gs://$LAB_DATA_BUCKET --location=$LOCATION --impersonate-service-account $UMSA_FQN
 gcloud storage buckets create gs://$LAB_CODE_BUCKET --location=$LOCATION --impersonate-service-account $UMSA_FQN
 ```
+
+<hr>
 
 ## 9. Provision a BigQuery Dataset
 
@@ -341,6 +359,8 @@ bq --location=$LOCATION mk \
     $PROJECT_ID:$BQ_DATASET_NM 
 ```
 
+<hr>
+
 ## 10. Provision Vertex AI Workbench Managed Instance
 
 We will use this for interacting with Dataproc for Spark based distributed ETL and with "Ray on Vertex AI" cluster for distributed machine learning. <br>
@@ -357,10 +377,10 @@ INSTANCE_NM="ray-lab-vaiwmi"
 SUBNET_NM="ray-lab-snet"
 SUBNET_RESOURCE_URI=projects/$PROJECT_ID/regions/$LOCATION/subnetworks/$SUBNET_NM
 
-
 gcloud workbench instances create $INSTANCE_NM --vm-image-project=cloud-notebooks-managed --vm-image-family=workbench-instances --machine-type=n1-standard-4 --location=$ZONE --subnet=$SUBNET_RESOURCE_URI  --service-account-email=$UMSA_FQN
 ```
 
+<hr>
 
 ## 11. Provision "Ray on Vertex AI" (RoV) Cluster
 
@@ -369,9 +389,7 @@ Paste in Cloud Shell scoped to the project you created-
 pip install google-cloud-aiplatform[ray]
 ```
 
-
-
-
+<hr>
 
 
 ## 11. Upload lab assets
