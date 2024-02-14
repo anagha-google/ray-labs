@@ -365,42 +365,7 @@ bq --location=$LOCATION mk \
 
 <hr>
 
-## 10. Provision Vertex AI Workbench Managed Instance
 
-We will use this for interacting with Dataproc for Spark based distributed ETL and with "Ray on Vertex AI" cluster for distributed machine learning. <br>
-
-Paste in Cloud Shell scoped to the project you created-
-```
-PROJECT_ID=`gcloud config list --format "value(core.project)" 2>/dev/null`
-PROJECT_NBR=`gcloud projects describe $PROJECT_ID | grep projectNumber | cut -d':' -f2 |  tr -d "'" | xargs`
-UMSA=lab-sa
-UMSA_FQN=$UMSA@$PROJECT_ID.iam.gserviceaccount.com
-LOCATION="us-central1"
-ZONE="$LOCATION-b"
-INSTANCE_NM="ray-lab-vaiwmi"
-SUBNET_NM="ray-lab-snet"
-SUBNET_RESOURCE_URI=projects/$PROJECT_ID/regions/$LOCATION/subnetworks/$SUBNET_NM
-
-gcloud workbench instances create $INSTANCE_NM --vm-image-project=cloud-notebooks-managed --vm-image-family=workbench-instances --machine-type=n1-standard-4 --location=$ZONE --subnet=$SUBNET_RESOURCE_URI  --service-account-email=$UMSA_FQN
-```
-
-<hr>
-
-## 11. Provision "Ray on Vertex AI" (RoV) Cluster
-
-Paste in Cloud Shell scoped to the project you created-
-```
-pip install google-cloud-aiplatform[ray]
-```
-
-<hr>
-
-
-## 11. Upload lab assets
-
-### 11.1. Upload notebooks
-
-### 11.2. Upload data
 
 
 
