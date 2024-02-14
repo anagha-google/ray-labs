@@ -362,14 +362,19 @@ This takes about 15 minutes.
 
 Ray on Vertex cluster creation results in auto-creation of a Colab Enterprise Runtime Template with Ray libraries (CERTFROV) pre-installed and compatible with the RoV cluster. Launching a notebook that uses the CERTFROV provides a smooth experience working with Ray via notebooks, without any Ray specific compatibility issues across Colab and RoV cluster.
 
-
+<hr>
 
 ## 12. Upload data into the buckets
 
 
+<hr>
 
 ## 13. Upload notebooks into Colab Enterprise
 
 
+<hr><hr>
 
+This concludes the module, proceed to the next module.
+
+<hr>
 
