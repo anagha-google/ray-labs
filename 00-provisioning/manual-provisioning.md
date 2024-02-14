@@ -270,28 +270,6 @@ gcloud compute networks create $VPC_NM \
 --impersonate-service-account $UMSA_FQN
 ```
 
-### 7.2. SKIP THIS - Create a subnet
-
-Paste in Cloud Shell scoped to the project you created-
-```
-PROJECT_ID=`gcloud config list --format "value(core.project)" 2>/dev/null`
-VPC_NM="ray-lab-vpc"
-SUBNET_NM="ray-lab-snet"
-RAY_LAB_SUBNET_CIDR=10.0.0.0/16
-UMSA=lab-sa
-UMSA_FQN=$UMSA@$PROJECT_ID.iam.gserviceaccount.com
-LOCATION="us-central1"
-
-
-gcloud compute networks subnets create $SUBNET_NM \
- --network $VPC_NM \
- --range $RAY_LAB_SUBNET_CIDR  \
- --region $LOCATION \
- --enable-private-ip-google-access \
- --project $PROJECT_ID \
---impersonate-service-account $UMSA_FQN
-```
-
 ### 7.3. Create peering with service networking
 
 Paste in Cloud Shell scoped to the project you created-
@@ -365,6 +343,32 @@ bq --location=$LOCATION mk \
 
 <hr>
 
+## 10. Create a Ray on Vertex cluster manually
+
+### 10.1. Background:
+1. Currently, there is no gcloud support for creating Ray on Vertex AI
+2. There is SDK support for creating Ray clusters on Vertex
+3. For the purpose of simplicity, we will create a cluster manually, via the user interface
+
+### 10.2. Create a cluster
+
+This takes about 15 minutes.
+
+
+
+<hr>
+
+## 11. Review of Colab Enterprise and RoV integration
+
+Ray on Vertex cluster creation results in auto-creation of a Colab Enterprise Runtime Template with Ray libraries (CERTFROV) pre-installed and compatible with the RoV cluster. Launching a notebook that uses the CERTFROV provides a smooth experience working with Ray via notebooks, without any Ray specific compatibility issues across Colab and RoV cluster.
+
+
+
+## 12. Upload data into the buckets
+
+
+
+## 13. Upload notebooks into Colab Enterprise
 
 
 
