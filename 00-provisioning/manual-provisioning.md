@@ -342,6 +342,7 @@ bq --location=$LOCATION mk \
 ```
 
 <hr>
+<hr>
 
 ## 10. Create a Ray on Vertex cluster manually
 
@@ -350,10 +351,52 @@ bq --location=$LOCATION mk \
 2. There is SDK support for creating Ray clusters on Vertex
 3. For the purpose of simplicity, we will create a cluster manually, via the user interface
 
+<hr>
+
 ### 10.2. Create a cluster
 
-This takes about 15 minutes.
+This takes about 15 minutes. Follow the steps below-
 
+
+![LAB](images/m00-lab-01.png)   
+<br><br>
+
+![LAB](images/m00-lab-02.png)   
+<br><br>
+
+![LAB](images/m00-lab-03.png)   
+<br><br>
+
+![LAB](images/m00-lab-04.png)   
+<br><br>
+
+![LAB](images/m00-lab-05.png)   
+<br><br>
+
+![LAB](images/m00-lab-06.png)   
+<br><br>
+
+![LAB](images/m00-lab-07.png)   
+<br><br>
+
+<hr>
+
+### 10.3. Walk-through of the cluster and UIs and terminals
+
+Lets familiarize ourselves with the cluster -
+
+
+![LAB](images/m00-lab-08.png)   
+<br><br>
+
+![LAB](images/m00-lab-09.png)   
+<br><br>
+
+![LAB](images/m00-lab-10.png)   
+<br><br>
+
+![LAB](images/m00-lab-11.png)   
+<br><br>
 
 
 <hr>
@@ -361,6 +404,10 @@ This takes about 15 minutes.
 ## 11. Review of Colab Enterprise and RoV integration
 
 Ray on Vertex cluster creation results in auto-creation of a Colab Enterprise Runtime Template with Ray libraries (CERTFROV) pre-installed and compatible with the RoV cluster. Launching a notebook that uses the CERTFROV provides a smooth experience working with Ray via notebooks, without any Ray specific compatibility issues across Colab and RoV cluster.
+
+
+![LAB](images/m00-lab-12.png)   
+<br><br>
 
 <hr>
 
