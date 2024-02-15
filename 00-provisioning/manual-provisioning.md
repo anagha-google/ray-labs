@@ -463,8 +463,48 @@ Follow the steps below to get started-
 
 Follow the steps below to get started-
 
+
+1. Check to see if you are connected to rhe Ray cluster
+   
 ![LAB](images/m00-lab-24.png)   
 <br><br>
+
+2. Execute the first two cells
+
+  <hr>
+
+3. Open the Ray dashboard at the link in the notebook
+
+![LAB](images/m00-lab-25.png)   
+<br><br>
+
+4. Switch back to the noteook and paste the below into a cell, to run a "Hello World"-
+
+
+```
+import time
+
+@ray.remote
+def hello_world():
+    return "hello world"
+
+@ray.remote
+def square(x):
+    print(x)
+    time.sleep(100)
+    return x * x
+
+ray.init()  # No need to specify address="vertex_ray://...."
+print(ray.get(hello_world.remote()))
+print(ray.get([square.remote(i) for i in range(4)]))
+
+```
+
+
+
+5. You should see the execution in the cell output as shown below
+
+
 
 <hr>
 
