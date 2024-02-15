@@ -385,6 +385,7 @@ This takes about 15 minutes. Follow the steps below-
 
 Lets familiarize ourselves with the cluster -
 
+#### 10.3.1. The cluster
 
 ![LAB](images/m00-lab-08.png)   
 <br><br>
@@ -398,6 +399,22 @@ Lets familiarize ourselves with the cluster -
 ![LAB](images/m00-lab-11.png)   
 <br><br>
 
+#### 10.3.2. The Ray UI
+
+![LAB](images/m00-lab-12.png)   
+<br><br>
+
+![LAB](images/m00-lab-13.png)   
+<br><br>
+
+#### 10.3.3. The terminal to the head node 
+
+![LAB](images/m00-lab-14.png)   
+<br><br>
+
+![LAB](images/m00-lab-15.png)   
+<br><br>
+
 
 <hr>
 
@@ -405,6 +422,20 @@ Lets familiarize ourselves with the cluster -
 
 Ray on Vertex cluster creation results in auto-creation of a Colab Enterprise Runtime Template with Ray libraries (CERTFROV) pre-installed and compatible with the RoV cluster. Launching a notebook that uses the CERTFROV provides a smooth experience working with Ray via notebooks, without any Ray specific compatibility issues across Colab and RoV cluster.
 
+### 11.1. Getting to the Colab Enterprise notebook aut-created by the RoV cluster provisioning process
+
+![LAB](images/m00-lab-12.png)   
+<br><br>
+
+### 11.2. The Colab Runtime Template for RoV
+
+This runtime template gets automatically created for you so that you can semaless connect to the RoV cluster from Colab without having to install Ray and fix any version incompatibilities.
+
+
+![LAB](images/m00-lab-12.png)   
+<br><br>
+
+### 11.3. The Colab Runtime Template for RoV
 
 ![LAB](images/m00-lab-12.png)   
 <br><br>
