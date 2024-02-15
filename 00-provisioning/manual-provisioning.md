@@ -422,9 +422,14 @@ Lets familiarize ourselves with the cluster -
 
 Ray on Vertex cluster creation results in auto-creation of a Colab Enterprise Runtime Template with Ray libraries (CERTFROV) pre-installed and compatible with the RoV cluster. Launching a notebook that uses the CERTFROV provides a smooth experience working with Ray via notebooks, without any Ray specific compatibility issues across Colab and RoV cluster.
 
-### 11.1. Getting to the Colab Enterprise notebook aut-created by the RoV cluster provisioning process
+### 11.1. Getting to the Colab Enterprise from the RoV cluster 
 
-![LAB](images/m00-lab-12.png)   
+![LAB](images/m00-lab-16.png)   
+<br><br>
+
+### 11.2. The notebook auto-created by the RoV cluster creation process for you
+
+![LAB](images/m00-lab-17.png)   
 <br><br>
 
 ### 11.2. The Colab Runtime Template for RoV
@@ -432,12 +437,33 @@ Ray on Vertex cluster creation results in auto-creation of a Colab Enterprise Ru
 This runtime template gets automatically created for you so that you can semaless connect to the RoV cluster from Colab without having to install Ray and fix any version incompatibilities.
 
 
-![LAB](images/m00-lab-12.png)   
+![LAB](images/m00-lab-18.png)   
 <br><br>
 
-### 11.3. The Colab Runtime Template for RoV
+![LAB](images/m00-lab-19.png)   
+<br><br>
 
-![LAB](images/m00-lab-12.png)   
+### 11.3. Connecting the auto-created notebook to the auto-created runtime template
+
+Follow the steps below to get started-
+
+![LAB](images/m00-lab-20.png)   
+<br><br>
+
+![LAB](images/m00-lab-21.png)   
+<br><br>
+
+![LAB](images/m00-lab-22.png)   
+<br><br>
+
+![LAB](images/m00-lab-23.png)   
+<br><br>
+
+### 11.4. Smoke test the cluster created
+
+Follow the steps below to get started-
+
+![LAB](images/m00-lab-24.png)   
 <br><br>
 
 <hr>
