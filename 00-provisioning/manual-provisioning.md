@@ -478,8 +478,7 @@ Follow the steps below to get started-
 ![LAB](images/m00-lab-25.png)   
 <br><br>
 
-4. Switch back to the noteook and paste the below into a cell, to run a "Hello World"-
-
+4. Switch back to the noteook and paste the below into a cell, and run this "Hello World" program to familiarize yourself with remote job execution-
 
 ```
 import time
@@ -497,23 +496,66 @@ def square(x):
 ray.init()  # No need to specify address="vertex_ray://...."
 print(ray.get(hello_world.remote()))
 print(ray.get([square.remote(i) for i in range(4)]))
-
 ```
-
 
 
 5. You should see the execution in the cell output as shown below
 
+![LAB](images/m00-lab-26.png)   
+<br><br>
+
+6. Switch to the dashboard & study the various tabs
+
+![LAB](images/m00-lab-27.png)   
+<br><br> 
+
+
+![LAB](images/m00-lab-28.png)   
+<br><br> 
+
+
+
+![LAB](images/m00-lab-29.png)   
+<br><br> 
+
+
+![LAB](images/m00-lab-30.png)   
+<br><br> 
 
 
 <hr>
 
 ## 12. Upload data into the buckets
 
+### 12.1. Download the dataset
+
+Paste in Cloud Shell scoped to your project-
+```
+cd ~
+mkdir ray-downloads
+cd ray-downloads
+
+wget https://github.com/anagha-microsoft/ncr-mlops-hol/blob/master/data/framingham.csv .
+
+```
+
+### 12.2. Upload data to the GCS bucket
+
+```
+PROJECT_ID=`gcloud config list --format "value(core.project)" 2>/dev/null`
+PROJECT_NBR=`gcloud projects describe $PROJECT_ID | grep projectNumber | cut -d':' -f2 |  tr -d "'" | xargs`
+LAB_DATA_BUCKET=ray_lab_data_bucket_$PROJECT_NBR
+
+cd ~/ray-downloads
+
+gsutil cp framingham.csv gs://$LAB_DATA_BUCKET/raw-source/chd-experiment/
+
+```
 
 <hr>
 
 ## 13. Upload notebooks into Colab Enterprise
+
 
 
 <hr><hr>
