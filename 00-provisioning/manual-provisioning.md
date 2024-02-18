@@ -525,8 +525,7 @@ print(ray.get([square.remote(i) for i in range(4)]))
 
 <hr>
 
-## 12. Upload data into the buckets
-
+## 12. Load data into BigQuery
 ### 12.1. Download the dataset
 
 Paste in Cloud Shell scoped to your project-
@@ -539,18 +538,17 @@ wget https://github.com/anagha-microsoft/ncr-mlops-hol/blob/master/data/framingh
 
 ```
 
-### 12.2. Upload data to the GCS bucket
+### 12.2. Load data into BigQuery
 
 ```
 PROJECT_ID=`gcloud config list --format "value(core.project)" 2>/dev/null`
 PROJECT_NBR=`gcloud projects describe $PROJECT_ID | grep projectNumber | cut -d':' -f2 |  tr -d "'" | xargs`
-LAB_DATA_BUCKET=ray_lab_data_bucket_$PROJECT_NBR
+LOCATION="us-central1"
+BQ_DATASET_NM="ray_lab_ds"
 
 cd ~/ray-downloads
 
-gsutil cp framingham.csv gs://$LAB_DATA_BUCKET/raw-source/chd-experiment/
-
-```
+bq load --autodetect=true --source_format="CSV" --replace=true "$BQ_DATASET_NM.chd_source" framingham.csv
 
 <hr>
 
