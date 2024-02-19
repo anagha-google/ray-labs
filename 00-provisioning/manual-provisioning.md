@@ -316,8 +316,9 @@ UMSA_FQN=$UMSA@$PROJECT_ID.iam.gserviceaccount.com
 LOCATION="us-central1"
 LAB_DATA_BUCKET=ray_lab_data_bucket_$PROJECT_NBR
 LAB_CODE_BUCKET=ray_lab_code_bucket_$PROJECT_NBR
+LAB_MODEL_BUCKET=ray_lab_model_bucket_$PROJECT_NBR
 
-
+gcloud storage buckets create gs://$LAB_MODEL_BUCKET --location=$LOCATION --impersonate-service-account $UMSA_FQN
 gcloud storage buckets create gs://$LAB_DATA_BUCKET --location=$LOCATION --impersonate-service-account $UMSA_FQN
 gcloud storage buckets create gs://$LAB_CODE_BUCKET --location=$LOCATION --impersonate-service-account $UMSA_FQN
 ```
@@ -523,36 +524,6 @@ print(ray.get([square.remote(i) for i in range(4)]))
 <br><br> 
 
 
-<hr>
-
-## 12. Load data into BigQuery
-### 12.1. Download the dataset
-
-Paste in Cloud Shell scoped to your project-
-```
-cd ~
-mkdir ray-downloads
-cd ray-downloads
-
-wget https://github.com/anagha-microsoft/ncr-mlops-hol/blob/master/data/framingham.csv .
-
-```
-
-### 12.2. Load data into BigQuery
-
-```
-PROJECT_ID=`gcloud config list --format "value(core.project)" 2>/dev/null`
-PROJECT_NBR=`gcloud projects describe $PROJECT_ID | grep projectNumber | cut -d':' -f2 |  tr -d "'" | xargs`
-LOCATION="us-central1"
-BQ_DATASET_NM="ray_lab_ds"
-
-cd ~/ray-downloads
-
-bq load --autodetect=true --source_format="CSV" --replace=true "$BQ_DATASET_NM.chd_source" framingham.csv
-
-<hr>
-
-## 13. Upload notebooks into Colab Enterprise
 
 
 
