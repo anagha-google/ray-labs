@@ -317,7 +317,10 @@ LOCATION="us-central1"
 LAB_DATA_BUCKET=ray_lab_data_bucket_$PROJECT_NBR
 LAB_CODE_BUCKET=ray_lab_code_bucket_$PROJECT_NBR
 LAB_MODEL_BUCKET=ray_lab_model_bucket_$PROJECT_NBR
+LAB_LOG_BUCKET=ray_lab_log_bucket_$PROJECT_NBR
 
+
+gcloud storage buckets create gs://$LAB_LOG_BUCKET --location=$LOCATION --impersonate-service-account $UMSA_FQN
 gcloud storage buckets create gs://$LAB_MODEL_BUCKET --location=$LOCATION --impersonate-service-account $UMSA_FQN
 gcloud storage buckets create gs://$LAB_DATA_BUCKET --location=$LOCATION --impersonate-service-account $UMSA_FQN
 gcloud storage buckets create gs://$LAB_CODE_BUCKET --location=$LOCATION --impersonate-service-account $UMSA_FQN
