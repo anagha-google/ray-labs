@@ -180,7 +180,7 @@ gcloud iam service-accounts create ${UMSA} \
 
 <hr>
 
-## 6. Grant requisite permissions to the UMSA and yourself
+## 6. Grant requisite permissions to the UMSA, the AI platform Google Managed Service Account (GMSA), and to yourself
 
 ### 6.1. Grant the UMSA requisite permissions
 
@@ -238,7 +238,6 @@ Paste in Cloud Shell scoped to the project you created-
 ```
 PROJECT_ID=`gcloud config list --format "value(core.project)" 2>/dev/null`
 PROJECT_NBR=`gcloud projects describe $PROJECT_ID | grep projectNumber | cut -d':' -f2 |  tr -d "'" | xargs`
-PROJECT_NAME=`gcloud projects describe ${PROJECT_ID} | grep name | cut -d':' -f2 | xargs`
 UMSA=lab-sa
 UMSA_FQN=$UMSA@$PROJECT_ID.iam.gserviceaccount.com
 YOUR_GCP_ACCOUNT_NAME=`gcloud auth list --filter=status:ACTIVE --format="value(account)"`
@@ -252,6 +251,30 @@ gcloud iam service-accounts add-iam-policy-binding \
     ${UMSA_FQN} \
     --member="user:${YOUR_GCP_ACCOUNT_NAME}" \
     --role="roles/iam.serviceAccountTokenCreator"
+```
+
+### 6.3. Grant the AI platform Google Managed Service Account permissions to work with your storage systems
+
+When we submit Ray workloads to the cluster (in subsequent modules) via the Ray job API, (at the time of the authoring of this lab), the jobs run as the AI platform Google Managed Service Account, not with the end user credentials. Therefore we need to grant the AI platform Google Managed Service Account (GMSA) access to the storage systems to read and write. Running with the end user credentials is on the roadmap. <br>
+
+Paste in Cloud Shell scoped to the project you created-
+```
+PROJECT_ID=`gcloud config list --format "value(core.project)" 2>/dev/null`
+PROJECT_NBR=`gcloud projects describe $PROJECT_ID | grep projectNumber | cut -d':' -f2 |  tr -d "'" | xargs`
+GMSA_AIP_FQN=service-$PROJECT_NBR@gcp-sa-aiplatform-cc.iam.gserviceaccount.com
+
+
+gcloud projects add-iam-policy-binding $PROJECT_ID --member=serviceAccount:$GMSA_AIP_FQN \
+--role="roles/bigquery.dataEditor"
+
+gcloud projects add-iam-policy-binding $PROJECT_ID --member=serviceAccount:$GMSA_AIP_FQN \
+--role="roles/bigquery.jobUser"
+
+gcloud projects add-iam-policy-binding $PROJECT_ID --member=serviceAccount:$GMSA_AIP_FQN \
+--role="roles/bigquery.admin"
+
+gcloud projects add-iam-policy-binding $PROJECT_ID --member=serviceAccount:$GMSA_AIP_FQN \
+--role="roles/storage.admin"
 ```
 
 <hr>
