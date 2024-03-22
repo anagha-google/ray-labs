@@ -399,12 +399,13 @@ bq --location=$LOCATION mk \
 
 ## 10. Create a Ray on Vertex cluster manually
 
-At the time of the authoring of this lab, Ray on Vertex AI offered two modes to create clusters - SDK and UI. 
+At the time of the authoring of this lab, Ray on Vertex AI offered two modes to create clusters - SDK (Ray 2.9) and UI (Ray 2.4). For the purpose of simplicity, we will create a cluster manually, via the user interface.
 
-### 10.1. Background:
-1. Currently, there is no gcloud support for creating Ray on Vertex AI
-2. There is SDK support for creating Ray clusters on Vertex
-3. For the purpose of simplicity, we will create a cluster manually, via the user interface
+### 10.1. Note:
+1. At the time of authoring this lab, there is no gcloud support for creating Ray on Vertex AI,
+2. There is no Terraform provider
+3. There is only SDK support for creating Ray clusters on Vertex
+4. And UI support to create Ray clusters on Vertex
 
 <hr>
 
