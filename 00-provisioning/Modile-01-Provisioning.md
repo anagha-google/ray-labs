@@ -3,6 +3,23 @@
 ## About
 In this module, we will provision the lab environment manually.
 
+### Google Cloud services provisioned
+
+
+### Software versions
+
+Ray version on Ray on Vertex AI: 2.4
+(at the time of authoring of this lab, via the UI, the version available was 2.4)
+
+### Module duration
+
+15 minutes or less
+
+### Module prerequisites
+
+A GCP project with privileges to provision services, service accounts and grant permissions
+
+<hr>
 
 ## 1. Create a GCP project
 
