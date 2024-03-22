@@ -1,19 +1,24 @@
-# Manual Provisioning of the lab environment on GCP
+# Module 01: Provisioning of the lab environment on GCP
+
+## About
+In this module, we will provision the lab environment manually.
 
 
 ## 1. Create a GCP project
 
-Create a project manually
+Create a project manually. 
 
 <hr>
 
 ## 2. Grant yourself requisite privileges to set up the environment in your project
 
-This includes Owner (basic) permission and Organization policy administrator role (applicable for GCP CE Argolis environment).
+This includes Owner (basic) permission and Organization policy administrator role (applicable for GCP Argolis environment).
 
 <hr>
 
 ## 3. Enable requisite Google APIs
+
+There are a few APIs that are not actually used in the lab like Dataproc, but allow room for complementing Ray (scalable ML) with Spark (scalable ETL) on Dataproc.<br>
 
 Paste in Cloud Shell scoped to the project you created-
 ```
@@ -40,7 +45,7 @@ gcloud services enable dataform.googleapis.com
 <hr>
 
 ## 4. Update Organization Policies
-This is for any compute you may spin up for ETL or notebooks...such as Dataproc for Spark-based ETL, Notebook instances on Vertex AI Workbench managed instances.<br>
+This is for any compute you may spin up for ETL or notebook infrastructure...such as Dataproc for Spark-based ETL, Notebook instances on Vertex AI Workbench managed instances. Feel free to skip if not applicable.<br>
 
 Paste in Cloud Shell scoped to the project you created-
 ```
@@ -156,6 +161,8 @@ rm -rf restrictVpcPeering.yaml
 
 
 ## 5. Provision a User Managed Service Account (UMSA)
+
+We will use a UMSA to provision services to stay close to the real world. <br>
 
 Paste in Cloud Shell scoped to the project you created-
 ```
@@ -330,6 +337,8 @@ gcloud storage buckets create gs://$LAB_CODE_BUCKET --location=$LOCATION --imper
 
 ## 9. Provision a BigQuery Dataset
 
+We have a BQML component to the lab. Therefore a BQ dataset.
+
 Paste in Cloud Shell scoped to the project you created-
 ```
 PROJECT_ID=`gcloud config list --format "value(core.project)" 2>/dev/null`
@@ -349,6 +358,8 @@ bq --location=$LOCATION mk \
 <hr>
 
 ## 10. Create a Ray on Vertex cluster manually
+
+At the time of the authoring of this lab, Ray on Vertex AI offered two modes to create clusters - SDK and UI. 
 
 ### 10.1. Background:
 1. Currently, there is no gcloud support for creating Ray on Vertex AI
@@ -525,9 +536,6 @@ print(ray.get([square.remote(i) for i in range(4)]))
 
 ![LAB](images/m00-lab-30.png)   
 <br><br> 
-
-
-
 
 
 <hr><hr>
