@@ -8,7 +8,7 @@ In this module, we will provision the lab environment manually.
 
 ### Software versions
 
-Ray version on Ray on Vertex AI: 2.4
+Ray version on Ray on Vertex AI: 2.4<br>
 (at the time of authoring of this lab, via the UI, the version available was 2.4)
 
 ### Module duration
