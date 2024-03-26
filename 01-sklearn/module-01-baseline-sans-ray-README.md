@@ -39,7 +39,7 @@ It includes the following steps:
 
 ### 1.4. Lab module prerequisites
 
-
+[The provisioning lab module](https://github.com/anagha-google/ray-labs/blob/main/00-common/Module-00-Provisioning.md)
 
 ### 1.5. Lab module duration
 
