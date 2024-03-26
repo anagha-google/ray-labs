@@ -32,29 +32,90 @@ It includes the following steps:
 ### 1.2. Lab module use case
 
 
+![M1-1](./images/skl-m01-02.png)   
+<br><br>
+
+<hr>
 
 ### 1.3. Lab module flow
 
+![M1-1](./images/skl-m01-01.png)   
+<br><br>
 
+<hr>
 
 ### 1.4. Lab module prerequisites
 
 [The provisioning lab module](https://github.com/anagha-google/ray-labs/blob/main/00-common/Module-00-Provisioning.md)
 
+<hr>
+
 ### 1.5. Lab module duration
 
-
+90 minutes - largely due to time taken to deploy model to Vertex AI endpoint.
 
 <hr><hr>
 
 ## 2. Getting started
 
+### 2.1. Upload notebooks in the lab to Colab enterprise.
 
+`git clone` the lab or zip download the git repo for the lab and upload as shown below.
+
+![M1-2](./images/skl-m01-03.png)   
+<br><br>
+
+![M1-2](./images/skl-m01-04.png)   
+<br><br>
+
+![M1-2](./images/skl-m01-05.png)   
+<br><br>
+
+![M1-2](./images/skl-m01-06.png)   
+<br><br>
+
+![M1-2](./images/skl-m01-07.png)   
+<br><br>
+
+<hr><hr>
+
+## 3. The lab
+
+### 3.1. Lab guide
+
+Switch to the notebook and run all the steps. Switch back to this guide to see screenshots.
+
+### Step 7 - Register the model into Vertex AI Model Registry
+
+Reviewing model registration in Vertex AI Model Registry
+
+![M1-3](./images/skl-m01-08.png)   
+<br><br>
+
+![M1-3](./images/skl-m01-09.png)   
+<br><br>
+
+### Step 8.1 - Create an endpoint resource in Vertex AI for online serving
+
+![M1-3](./images/skl-m01-10.png)   
+<br><br>
+
+![M1-3](./images/skl-m01-11.png)   
+<br><br>
+
+### Step 8.2 - Deploy the model to the endpoint resource Vertex AI for online serving
+
+![M1-3](./images/skl-m01-12.png)   
+<br><br>
+
+### Step 9.3 - Imported model in BQML
+
+![M1-3](./images/skl-m01-13.png)   
+<br><br>
 
 
 <hr><hr>
 
-## 3. 
+This concludes the module. In subsequent modules, we will get into Ray for distributed sklearn. Proceed to the next module.
 
-
-
+<hr>
