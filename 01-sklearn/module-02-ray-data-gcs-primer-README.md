@@ -55,6 +55,8 @@ Completion of prior lab modules.
 ### 2.1. Getting started
 Upload the notebook - module-02-ray-data-gcs-primer.ipynb to your colab workspace as done in module 1.
 
+<hr>
+
 ### 2.2. Upload data to Cloud Storage bucket 
 
 #### 2.2.1. Upload CSV data
@@ -68,18 +70,25 @@ Upload the notebook - module-02-ray-data-gcs-primer.ipynb to your colab workspac
 ![M1-1](./images/skl-m02-05.png)   
 <br><br>
 
+<hr>
+
 #### 2.2.2. Visual of data we persist from the lab
 
-![M1-1](./images/skl-m02-06.png)   
+![M1-1](./images/skl-m02-07.png)   
 <br><br>
 
 ![M1-1](./images/skl-m02-06.png)   
 <br><br>
 
+
+<hr>
 
 #### 2.3. Get started
 
 Move over to the Colab notebook environment - module-02-ray-data-gcs-primer.ipynb - and run through the lab module.
+
+![M1-1](./images/skl-m02-08.png)   
+<br><br>
 
 
 <hr><hr>
