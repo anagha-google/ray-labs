@@ -44,13 +44,20 @@ It includes the following steps:
 
 <hr>
 
-### 1.4. Lab module prerequisites
+### 1.4. Lab module solution architecture
+
+![M1-1](./images/skl-m01-14.png)   
+<br><br>
+
+<hr>
+
+### 1.5. Lab module prerequisites
 
 [The provisioning lab module](https://github.com/anagha-google/ray-labs/blob/main/00-common/Module-00-Provisioning.md)
 
 <hr>
 
-### 1.5. Lab module duration
+### 1.6. Lab module duration
 
 90 minutes - largely due to time taken to deploy model to Vertex AI endpoint.
 
