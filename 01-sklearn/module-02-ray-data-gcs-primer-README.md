@@ -1,4 +1,4 @@
-# Module 02: *ray.data* primer for interacting with Google Cloud Storage
+# Module 02: **ray.data** primer for interacting with Google Cloud Storage
 
 ## 1. About the module
 The notebook for this module demonstrates using ray.data for reading, transforming and writing to Google Cloud Storage. 
