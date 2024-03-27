@@ -73,6 +73,27 @@ Move over to the Colab notebook environment - module-04-ray-train-sklearn-primer
 ![M1-1](./images/skl-m04-07.png)   
 <br><br>
 
+![M1-1](./images/skl-m04-08.png)   
+<br><br>
+
+![M1-1](./images/skl-m04-09.png)   
+<br><br>
+
+![M1-1](./images/skl-m04-10.png)   
+<br><br>
+
+![M1-1](./images/skl-m04-11.png)   
+<br><br>
+
+![M1-1](./images/skl-m04-12.png)   
+<br><br>
+
+![M1-1](./images/skl-m04-13.png)   
+<br><br>
+
+![M1-1](./images/skl-m04-14.png)   
+<br><br>
+
 
 <hr><hr>
 
