@@ -9,6 +9,8 @@ The notebook for this module demonstrates using ray's out of the box feature for
 
 1. Running sklearn sample without Ray's parallelization
 2. Running the same sample with Ray for distributing the work
+3. Review the performance improvement with using Ray
+4. Navigate to the Ray dashboard and review execution
 
 <hr>
  
@@ -50,6 +52,17 @@ Upload the notebook - module-04-ray-train-sklearn-primer.ipynb to your colab wor
 Move over to the Colab notebook environment - module-04-ray-train-sklearn-primer.ipynb - and run through the lab module.
 
 ![M1-1](./images/skl-m04-03.png)   
+<br><br>
+
+### 2.3. Ray dashboard for reviewing job execution
+
+![M1-1](./images/skl-m04-04.png)   
+<br><br>
+
+![M1-1](./images/skl-m04-05.png)   
+<br><br>
+
+![M1-1](./images/skl-m04-06.png)   
 <br><br>
 
 
