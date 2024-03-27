@@ -13,9 +13,14 @@ The notebook for this module demonstrates using ray.data for reading, transformi
  
 ### 1.2. About ray.data
 
+ray.data is a library in Ray AIR fit for purpose for reading, wriitng data, for last mile transformations and 
 
+![M1-1](./images/readme-ray-03.png)   
+<br><br>
 
 ### 1.3. Lab module flow
+
+
 
 ### 1.4. Lab module solution architecture
 
