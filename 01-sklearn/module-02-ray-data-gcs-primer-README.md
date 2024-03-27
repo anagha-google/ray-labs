@@ -3,6 +3,8 @@
 ## 1. About the module
 The notebook for this module demonstrates using ray.data for reading, transforming and writing to Google Cloud Storage. 
 
+<hr>
+
 ### 1.1. Content covered
 
 1. Uplaod data to Google Cloud Storage
@@ -10,25 +12,43 @@ The notebook for this module demonstrates using ray.data for reading, transformi
 3. Read CSV data in GCS with ray.data 
 4. Transform data with ray.data 
 5. Persist data with ray.data  as parquet
+
+<hr>
  
 ### 1.2. About ray.data
 
-ray.data is a library in Ray AIR fit for purpose for reading, wriitng data, for last mile transformations and 
+ray.data is a library in Ray AIR fit for purpose for reading, writing data, for feature engineeringf at scale, last mile transformations and batch inferencing at scale. Learn more at ray.io.
 
 ![M1-1](./images/readme-ray-03.png)   
 <br><br>
 
+<hr>
+
 ### 1.3. Lab module flow
 
+![M1-1](./images/skl-m02-01.png)   
+<br><br>
 
+<hr>
 
 ### 1.4. Lab module solution architecture
 
+![M1-1](./images/skl-m02-02.png)   
+<br><br>
+
+<hr>
+
 ### 1.5. Lab module duration
 
+5 minutes
+
+<hr>
 
 ### 1.6. Lab module pre-requisites
 
+Completion of prior lab modules.
+
+<hr><hr>
 
 ## 2. Lab
 
@@ -37,6 +57,21 @@ Upload the notebook - module-02-ray-data-gcs-primer.ipynb to your colab workspac
 
 ### 2.2. Cloud Storage bucket 
 
+#### 2.2.1. Upload csv data
+
+![M1-1](./images/skl-m02-03.png)   
+<br><br>
+
+![M1-1](./images/skl-m02-03.png)   
+<br><br>
+
+![M1-1](./images/skl-m02-03.png)   
+<br><br>
+
+#### 2.2.2. Visual of data we persist from the lab
+
+![M1-1](./images/skl-m02-06.png)   
+<br><br>
 
 
 <hr><hr>
