@@ -7,10 +7,10 @@ The notebook for this module demonstrates using ray's out of the box feature for
 
 ### 1.1. Content covered
 
-1. Running sklearn sample without Ray's parallelization
-2. Running the same sample with Ray for distributing the work
-3. Review the performance improvement with using Ray
-4. Learn how to submit a job to Ray job API and understand the IAM permissions nunances with Ray on Vertex AI as it stands.
+1. Running sklearn sample without Ray's parallelization - takes ~5 minutes
+2. Running the same sample with Ray for distributing the work - takes ~1 minute
+3. Reflect on the performance improvement with using Ray, and the simplicity of seamlessly scaling sklearn across workers!
+4. Learn how to submit a job to Ray job API and understand the IAM permissions nuances with Ray on Vertex AI as it stands.
 5. Navigate to the Ray dashboard and review execution
 
 <hr>
