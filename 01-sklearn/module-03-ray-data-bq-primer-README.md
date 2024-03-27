@@ -55,7 +55,7 @@ Upload the notebook - module-03-ray-data-bq-primer.ipynb to your colab workspace
 
 <hr>
 
-#### 2.3. Get started
+### 2.3. Get started
 
 Move over to the Colab notebook environment - module-03-ray-data-bq-primer.ipynb - and run through the lab module.
 
