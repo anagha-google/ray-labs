@@ -93,6 +93,6 @@ Move over to the Colab notebook environment - module-02-ray-data-gcs-primer.ipyn
 
 <hr><hr>
 
-This concludes the lab module. Proceed to the [next module](https://github.com/anagha-google/ray-labs/blob/main/01-sklearn/module-03-ray.data-bq-primer-README.md).
+This concludes the lab module. Proceed to the [next module](https://github.com/anagha-google/ray-labs/blob/main/01-sklearn/module-03-ray-data-bq-primer-README.md).
 
 <hr><hr>
