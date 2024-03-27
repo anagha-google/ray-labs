@@ -61,6 +61,18 @@ Upload the notebook - module-02-ray-data-gcs-primer.ipynb to your colab workspac
 
 #### 2.2.1. Upload CSV data
 
+Paste in Cloud Shell scoped to your project-
+```
+PROJECT_ID=`gcloud config list --format "value(core.project)" 2>/dev/null`
+PROJECT_NBR=`gcloud projects describe $PROJECT_ID | grep projectNumber | cut -d':' -f2 |  tr -d "'" | xargs`
+
+cd ~/ray-labs/00-common/data/iris
+
+gsutil cp iris.csv gs://ray_lab_data_bucket_$PROJECT_NBR/sample-input-data/
+```
+
+Validate in the Cloud Console GCS UI-
+
 ![M1-1](./images/skl-m02-03.png)   
 <br><br>
 
