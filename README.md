@@ -4,7 +4,7 @@ This repository has minimum viable samples of distributed machine learning with 
 
 ## 1. About Ray
 
-Ray is popular open source technology for scaling machine learning. Learn in depth about Ray at ray.io.
+Ray is popular open source technology for scaling machine learning. Learn in depth about Ray at [ray.io](https://docs.ray.io/en/latest/index.html).
 
 ### 1.1. What is Ray?
 
