@@ -91,7 +91,7 @@ Ray is popular open source technology for scaling machine learning. Learn in dep
 
 ### 3.1. Documentation
 
-[Technology: Ray](https://ray.io)
+[Technology: Ray](https://ray.io)<br>
 [Product: Ray on Vertex AI](https://cloud.google.com/vertex-ai/docs/open-source/ray-on-vertex-ai/overview)
 
 ### 3.2. Hands on Labs
