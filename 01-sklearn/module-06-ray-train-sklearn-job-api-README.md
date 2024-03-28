@@ -40,7 +40,7 @@ Completion of prior lab modules.
 ## 2. Lab
 
 ### 2.1. Import lab module notebook into Colab
-Upload the notebook - module-05-ray-train-sklearn-interactive.ipynb to your colab workspace as done in module 1.
+Upload the notebook - module-06-ray-train-sklearn-job-api.ipynb to your colab workspace as done in module 1.
 
 
 ![M1-1](./images/skl-m06-03.png)   
@@ -51,7 +51,7 @@ Upload the notebook - module-05-ray-train-sklearn-interactive.ipynb to your cola
 
 ### 2.2. Get started
 
-Move over to the Colab notebook environment - module-04-ray-train-sklearn-primer.ipynb - and run through the lab module.
+Move over to the Colab notebook environment - module-06-ray-train-sklearn-job-api.ipynb - and run through the lab module.
 
 ![M1-1](./images/skl-m06-04.png)   
 <br><br>
