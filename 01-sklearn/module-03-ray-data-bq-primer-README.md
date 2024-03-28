@@ -65,6 +65,6 @@ Move over to the Colab notebook environment - module-03-ray-data-bq-primer.ipynb
 
 <hr><hr>
 
-This concludes the lab module. Proceed to the [next module](https://github.com/anagha-google/ray-labs/blob/main/01-sklearn/module-04-ray-train-sklearn-primer-README.md).
+This concludes the lab module. Proceed to the [next module](module-04-ray-train-sklearn-primer-README.md).
 
 <hr><hr>
