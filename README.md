@@ -1,6 +1,6 @@
 # Scalable Machine Learning with Ray on Vertex AI
 
-This repository has minimum viable samples of distributed machine learning with Ray on Vertex AI including integration with relevant Google Cloud services.
+This repository has minimum viable samples of distributed machine learning with Ray on Vertex AI including integration with relevant Google Cloud services. It is meant to be an easy read to demystify Ray on Vertex AI, and for those partial to trying the product, this repo provides quickstart samples.
 
 ## 1. About Ray
 
@@ -84,6 +84,26 @@ Ray is popular open source technology for scaling machine learning. Learn in dep
 
 ![M1-1](./images/rl-14.png)   
 <br><br>
+
+<hr><hr>
+
+## 3. Resources
+
+### 3.1. Documentation
+
+[Technology: Ray](https://ray.io)
+[Product: Ray on Vertex AI](https://cloud.google.com/vertex-ai/docs/open-source/ray-on-vertex-ai/overview)
+
+### 3.2. Hands on Labs
+
+| # | About | Author | 
+| -- | :--- | :--- |   
+| [01](1-dataproc-serverless-with-terraform) |  Pytorch on Ray on Vertex | Ivan Nardini |
+| [02](01-sklearn/README.md) |  Scikit-Learn on Ray on Vertex | Anagha Khanolkar |
+
+## Credits & Contribution
+
+This repository is comminity contributed. Feel free to contribute code or log issues ot this repo.
 
 <hr><hr>
 
