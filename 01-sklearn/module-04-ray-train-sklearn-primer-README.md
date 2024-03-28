@@ -97,6 +97,6 @@ Move over to the Colab notebook environment - module-04-ray-train-sklearn-primer
 
 <hr><hr>
 
-This concludes the lab module. Proceed to the [next module](https://github.com/anagha-google/ray-labs/blob/main/01-sklearn/module-05-ray-train-sklearn-interactive-README.md).
+This concludes the lab module. Proceed to the [next module](module-05-ray-train-sklearn-interactive-README.md).
 
 <hr><hr>
