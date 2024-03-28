@@ -43,5 +43,48 @@ Ray is popular open source technology for scaling machine learning. Learn in dep
 
 <hr><hr>
 
-## 2. Ray on Vertex AI
+## 2. Ray on Vertex AI (RoV)
+
+### 2.1. About RoV
+
+![M1-1](./images/rl-07.png)   
+<br><br>
+
+### 2.2. Getting started
+
+![M1-1](./images/rl-08.png)   
+<br><br>
+
+### 2.3. RoV architecture
+
+![M1-1](./images/rl-09.png)   
+<br><br>
+
+### 2.4. Provisioning RoV - options
+
+![M1-1](./images/rl-10.png)   
+<br><br>
+
+### 2.5. Architectural considerations
+
+![M1-1](./images/rl-11.png)   
+<br><br>
+
+### 2.6. Experimenting - Model Training, Tuning 
+
+![M1-1](./images/rl-12.png)   
+<br><br>
+
+### 2.7. Operationalizing - Model Training, Tuning 
+
+![M1-1](./images/rl-13.png)   
+<br><br>
+
+### 2.8. Predictions
+
+![M1-1](./images/rl-14.png)   
+<br><br>
+
+<hr><hr>
+
 
