@@ -78,12 +78,18 @@ Move over to the Colab notebook environment - module-07-ray-train-sklearn-serve-
 
 ### 2.4. Vertex AI model registry
 
-![M1-1](./images/skl-m07-08.png)   
+![M1-1](./images/skl-m07-08a.png)   
+<br><br>
+
+![M1-1](./images/skl-m07-08b.png)   
 <br><br>
 
 ### 2.5. Vertex AI model endpoint resource
 
-![M1-1](./images/skl-m07-09.png)   
+![M1-1](./images/skl-m07-09a.png)   
+<br><br>
+
+![M1-1](./images/skl-m07-09b.png)   
 <br><br>
 
 ### 2.6. Vertex AI model endpoint for online serving
