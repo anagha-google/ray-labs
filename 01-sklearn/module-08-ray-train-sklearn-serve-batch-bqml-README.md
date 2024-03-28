@@ -1,7 +1,7 @@
-# Module 10: Batch infernecing with BQML
+# Module 10: Batch inferencing with BQML
 
 ## 1. About the module
-The notebook for this module demonstrates importing a sklearn model trained on Ray into BQML and doing batch inferencing with BQML
+The notebook for this module demonstrates importing a sklearn model trained on Ray into BQML and doing batch inferencing with BQML. This is an optional patterm for inferencing if the data is structured.
 <hr>
 
 ### 1.1. Content covered
