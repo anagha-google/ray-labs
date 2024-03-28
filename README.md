@@ -11,7 +11,7 @@ Ray is popular open source technology for scaling machine learning. Learn in dep
 ![M1-1](./images/rl-00.png)   
 <br><br>
 
-### 1.2. Use cases for Ray
+### 1.2. Use cases for scaling with Ray
 
 ![M1-1](./images/rl-01.png)   
 <br><br>
