@@ -534,7 +534,16 @@ Follow the steps below to get started-
 ![LAB](images/m00-lab-25.png)   
 <br><br>
 
-4. Switch back to the noteook and paste the below into a cell, and run this "Hello World" program to familiarize yourself with remote job execution-
+4. Switch back to the notebook and downgrade Ray and restart kernel-
+
+Paste the below
+```
+!pip install ray===2.4.0
+```
+
+You will be prompted to restart, restart kernel.
+
+5. In the notebook, paste the below into a cell, and run this "Hello World" program to familiarize yourself with remote job execution-
 
 ```
 import time
@@ -555,12 +564,12 @@ print(ray.get([square.remote(i) for i in range(4)]))
 ```
 
 
-5. You should see the execution in the cell output as shown below
+6. You should see the execution in the cell output as shown below
 
 ![LAB](images/m00-lab-26.png)   
 <br><br>
 
-6. Switch to the dashboard & study the various tabs
+7. Switch to the dashboard & study the various tabs
 
 ![LAB](images/m00-lab-27.png)   
 <br><br> 
