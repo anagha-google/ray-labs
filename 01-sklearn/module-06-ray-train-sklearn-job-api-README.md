@@ -7,7 +7,8 @@ The notebook for this module demonstrates submitting the same model training we 
 
 ### 1.1. Content covered
 
-Training sklearn Random Forest Classifier with Ray for parallelization bu submitting the training as a job to the Ray job API.
+1. Training sklearn Random Forest Classifier with Ray for parallelization bu submitting the training as a job to the Ray job API.
+2. Navigating the dashboard to get to the driver log for output of the job.
 
 <hr>
  
@@ -60,11 +61,18 @@ Move over to the Colab notebook environment - module-06-ray-train-sklearn-job-ap
 
 ### 2.3. Ray dashboard for reviewing job execution
 
-Visit the Ray dashboard and review job logs.
+Visit the Ray dashboard and review job logs. Navigate to the driver logs to see the output of the job.
 
-![M1-1](./images/skl-m05-06.png)   
+![M1-1](./images/skl-m06-05.png)   
 <br><br>
 
+
+![M1-1](./images/skl-m06-06.png)   
+<br><br>
+
+
+![M1-1](./images/skl-m06-07.png)   
+<br><br>
 
 <hr><hr>
 
