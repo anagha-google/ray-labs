@@ -51,7 +51,7 @@ Upload the notebook - module-05-ray-train-sklearn-interactive.ipynb to your cola
 
 ### 2.2. Get started
 
-Move over to the Colab notebook environment - module-04-ray-train-sklearn-primer.ipynb - and run through the lab module.
+Move over to the Colab notebook environment - module-05-ray-train-sklearn-interactive.ipynb - and run through the lab module.
 
 ![M1-1](./images/skl-m05-04.png)   
 <br><br>
