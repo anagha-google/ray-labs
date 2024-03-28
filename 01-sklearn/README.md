@@ -53,7 +53,7 @@ Follow each step in the sequence laid out in the [instructions](https://github.c
 
 ## 3. Lab Modules
 
-### 3.1. Baseline model training without ray
+### Module 1: Baseline model training without ray
 
 Duration: 90 minutes or < | [Lab guide](module-01-baseline-sans-ray-README.md)
 
@@ -68,7 +68,7 @@ Duration: 90 minutes or < | [Lab guide](module-01-baseline-sans-ray-README.md)
 
 <hr><hr>
 
-### 3.2. ray.data Google Cloud Storage primer
+### Module 2: ray.data Google Cloud Storage primer
 
 Duration: 5 minutes or < | [Lab guide](module-02-ray-data-gcs-primer-README.md)
 
@@ -83,7 +83,7 @@ Duration: 5 minutes or < | [Lab guide](module-02-ray-data-gcs-primer-README.md)
 <hr><hr>
 
 
-### 3.3. ray.data Google Cloud Storage primer
+### Module 3: ray.data Google Cloud Storage primer
 
 Duration: 5 minutes or < | [Lab guide](module-03-ray-data-bq-primer-README.md)
 
@@ -93,6 +93,73 @@ Duration: 5 minutes or < | [Lab guide](module-03-ray-data-bq-primer-README.md)
 ![M1-1](./images/skl-3.3b.png)   
 <br><br>
 
+<hr><hr>
 
+
+### Module 4: Distributed sklearn on Ray - primer
+
+Duration: 5 minutes or < | [Lab guide](module-04-ray-train-sklearn-primer-README.md)
+
+![M1-1](./images/skl-3.4a.png)   
+<br><br>
+
+![M1-1](./images/skl-3.4b.png)   
+<br><br>
+
+
+<hr><hr>
+
+### Module 5: Interactive distributed sklearn Random Forest Classification on Ray
+
+Duration: 10 minutes or < | [Lab guide](module-05-ray-train-sklearn-interactive-README.md)
+
+![M1-1](./images/skl-3.5a.png)   
+<br><br>
+
+![M1-1](./images/skl-3.5b.png)   
+<br><br>
+
+
+<hr><hr>
+
+### Module 6: Distributed sklearn Random Forest Classification job on Ray
+
+Duration: 10 minutes or < | [Lab guide](module-06-ray-train-sklearn-job-api-README.md)
+
+![M1-1](./images/skl-3.6a.png)   
+<br><br>
+
+![M1-1](./images/skl-3.6b.png)   
+<br><br>
+
+### Module 7: Online predictions with Vertex AI predictions
+
+Duration: 60 minutes or < | [Lab guide](module-07-ray-train-sklearn-serve-online-vertex-endpoint-README.md)
+
+![M1-1](./images/skl-3.7a.png)   
+<br><br>
+
+![M1-1](./images/skl-3.7b.png)   
+<br><br>
+
+### Module 8: Batch predictions with BQML
+
+Duration: 5 minutes or < | [Lab guide](module-08-ray-train-sklearn-serve-batch-bqml-README.md)
+
+![M1-1](./images/skl-3.8a.png)   
+<br><br>
+
+![M1-1](./images/skl-3.8b.png)   
+<br><br>
+
+
+<hr><hr>
+
+### Module 9: Terminating the lab environment
+
+If you are done with the lab, dont forget to terminate the environment.<br>
+
+
+Duration: 5 minutes or < | [Lab guide](module-end.md)
 
 <hr><hr>
