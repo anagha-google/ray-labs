@@ -123,6 +123,6 @@ Reviewing model registration in Vertex AI Model Registry
 
 <hr><hr>
 
-This concludes the module. In subsequent modules, we will get into Ray for distributed sklearn. Proceed to the [next module](https://github.com/anagha-google/ray-labs/blob/main/01-sklearn/module-02-ray-data-gcs-primer-README.md).
+This concludes the module. In subsequent modules, we will get into Ray for distributed sklearn. Proceed to the [next module](module-02-ray-data-gcs-primer-README.md).
 
 <hr>
