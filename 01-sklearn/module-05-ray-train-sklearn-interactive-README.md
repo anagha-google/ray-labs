@@ -66,6 +66,6 @@ Visit the Ray dashboard and review logs.
 
 <hr><hr>
 
-This concludes the lab module. Proceed to the [next module](https://github.com/anagha-google/ray-labs/blob/main/01-sklearn/module-05-ray-train-sklearn-interactive-README.md).
+This concludes the lab module. Proceed to the [next module](module-06-ray-train-sklearn-job-api-README.md).
 
 <hr><hr>
