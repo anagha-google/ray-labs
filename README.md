@@ -98,7 +98,7 @@ Ray is popular open source technology for scaling machine learning. Learn in dep
 
 | # | About | Author | 
 | -- | :--- | :--- |   
-| [01](1-dataproc-serverless-with-terraform) |  Pytorch on Ray on Vertex | Ivan Nardini |
+| [01](https://github.com/GoogleCloudPlatform/vertex-ai-samples/blob/main/notebooks/official/ray_on_vertex_ai/get_started_with_pytorch_rov.ipynb) |  Pytorch on Ray on Vertex | Ivan Nardini |
 | [02](01-sklearn/README.md) |  Scikit-Learn on Ray on Vertex | Anagha Khanolkar |
 
 ## Credits & Contribution
