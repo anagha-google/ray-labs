@@ -83,7 +83,7 @@ Duration: 5 minutes or < | [Lab guide](module-02-ray-data-gcs-primer-README.md)
 <hr><hr>
 
 
-### Module 3: ray.data Google Cloud Storage primer
+### Module 3: ray.data BigQuery primer
 
 Duration: 5 minutes or < | [Lab guide](module-03-ray-data-bq-primer-README.md)
 
