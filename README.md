@@ -103,7 +103,7 @@ Ray is popular open source technology for scaling machine learning. Learn in dep
 
 ## Credits & Contribution
 
-This repository is comminity contributed. Feel free to contribute code or log issues ot this repo.
+This repository is community contributed by Ray enthusiasts. Feel free to contribute code or log issues ot this repo.
 
 <hr><hr>
 
