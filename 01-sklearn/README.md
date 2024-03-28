@@ -50,6 +50,11 @@ Follow each step in teh sequence laid out in the [instructions](https://github.c
 
 <hr><hr>
 
+## 3. Lab Modules
+
+### 3.1. Baseline model training without ray
+
+Duration: 90 minutes or < | [Lab guide]()
 
 
 
