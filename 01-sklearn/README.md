@@ -132,6 +132,8 @@ Duration: 10 minutes or < | [Lab guide](module-06-ray-train-sklearn-job-api-READ
 ![M1-1](./images/skl-3.6b.png)   
 <br><br>
 
+<hr><hr>
+
 ### Module 7: Online predictions with Vertex AI predictions
 
 Duration: 60 minutes or < | [Lab guide](module-07-ray-train-sklearn-serve-online-vertex-endpoint-README.md)
@@ -141,6 +143,8 @@ Duration: 60 minutes or < | [Lab guide](module-07-ray-train-sklearn-serve-online
 
 ![M1-1](./images/skl-3.7b.png)   
 <br><br>
+
+<hr><hr>
 
 ### Module 8: Batch predictions with BQML
 
