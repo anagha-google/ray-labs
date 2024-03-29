@@ -4,6 +4,22 @@ Ray parallelizes sklearn and you can find documetation from the Ray community [h
 
 ## 1. About the lab
 
+### Module Listing
+
+| # | About | 
+| -- | :--- |    
+| 01 |  [Provisioning Ray on Vertex](../00-common/Module-00-Provisioning.md) | 
+| 02 |  [Baseline sklearn model training without Ray](module-01-baseline-sans-ray-README.md) | 
+| 03 |  [Primer on ray.data with Cloud Storage](module-02-ray-data-gcs-primer-README.md) | 
+| 04 |  [Primer on ray.data with BigQuery](module-03-ray-data-bq-primer-README.md) | 
+| 05 |  [Primer on distributed sklearn with Ray on Vertex](module-04-ray-train-sklearn-primer-README.md) | 
+| 06 |  [Training a sklearn RandomForest Classifier on Ray on Vertex in an interactive mode on a Colab notebook](module-05-ray-train-sklearn-interactive-README.md) | 
+| 07 |  [Training a sklearn RandomForest Classifier on Ray on Vertex with the ray job API](module-06-ray-train-sklearn-job-api-README.md) | 
+| 08 |  [Online serving with Vertex AI predictions](module-07-ray-train-sklearn-serve-online-vertex-endpoint-README.md) | 
+| 09 |  [Batch predictions with BQML](module-08-ray-train-sklearn-serve-batch-bqml-README.md) | 
+| 10 |  [Hyperparameter tuning with ray.tune - COMING SOON]() | 
+| 11 |  [Batch inferencing with ray.data - COMING SOON]() | 
+
 ### 1.1. Use Case
 
 ![M1-1](./images/skl-01.png)   
@@ -41,7 +57,7 @@ Disclaimer: At the time of creation of this lab (Feb-Mar 2024), the cluster prov
 
 ### 2.3. Instructions for provisioning & smoke testing
 
-Follow each step in the sequence laid out in the [instructions](https://github.com/anagha-google/ray-labs/blob/main/00-common/Module-00-Provisioning.md)
+Follow each step in the sequence laid out in the [instructions](../00-common/Module-00-Provisioning.md)
 
 <hr>
 
@@ -52,6 +68,8 @@ Follow each step in the sequence laid out in the [instructions](https://github.c
 <hr><hr>
 
 ## 3. Lab Modules
+
+
 
 ### Module 1: Baseline model training without ray
 
