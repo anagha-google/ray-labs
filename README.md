@@ -94,14 +94,19 @@ Ray is popular open source technology for scaling machine learning. Learn in dep
 [Technology: Ray](https://ray.io)<br>
 [Product: Ray on Vertex AI](https://cloud.google.com/vertex-ai/docs/open-source/ray-on-vertex-ai/overview)
 
+<hr>
+
+
 ### 3.2. Hands on Labs
 
 | # | About | Author | 
 | -- | :--- | :--- |   
 | [01](https://github.com/GoogleCloudPlatform/vertex-ai-samples/blob/main/notebooks/official/ray_on_vertex_ai/get_started_with_pytorch_rov.ipynb) |  Pytorch on Ray on Vertex | Ivan Nardini - Feb 2024 |
+
+<hr><hr>
 | [02](01-sklearn/README.md) |  Scikit-Learn on Ray on Vertex | Anagha Khanolkar - Mar 2024 |
 
-## Credits & Contribution
+## 4. Credits & Contribution
 
 This repository is (Google) community contributed by Ray enthusiasts. Feel free to contribute code or log issues to this repo.
 
