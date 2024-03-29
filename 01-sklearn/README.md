@@ -4,6 +4,10 @@ Ray parallelizes sklearn and you can find documetation from the Ray community [h
 
 ## 1. About the lab
 
+The lab offers a minimum viable sample of distributed sklearn on Ray on Vertex AI.
+
+<hr>
+
 ### Module Listing
 
 | # | About | 
@@ -19,6 +23,8 @@ Ray parallelizes sklearn and you can find documetation from the Ray community [h
 | 09 |  [Batch predictions with BQML](module-08-ray-train-sklearn-serve-batch-bqml-README.md) | 
 | 10 |  [Hyperparameter tuning with ray.tune - COMING SOON]() | 
 | 11 |  [Batch inferencing with ray.data - COMING SOON]() | 
+
+<hr>
 
 ### 1.1. Use Case
 
