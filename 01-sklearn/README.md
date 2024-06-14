@@ -4,7 +4,7 @@ Ray parallelizes sklearn and you can find documetation from the Ray community [h
 
 ## 1. About the lab
 
-The lab offers a minimum viable sample of distributed sklearn on Ray on Vertex AI.
+The lab offers a minimum viable/functionally adequate sample of distributed sklearn on Ray on Vertex AI. The lab aims to demystify the product, contributions are welcome for improvements.
 
 <hr>
 
